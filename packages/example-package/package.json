@@ -1,0 +1,36 @@
+{
+  "name": "@example/example-package",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./A": "./src/lib/A.tsx",
+    "./B": "./src/lib/B.tsx",
+    "./C": "./src/lib/C.tsx",
+    "./D": "./src/lib/D.tsx"
+  },
+  "imports": {
+    "#*": [
+      "./src/*",
+      "./src/*.ts",
+      "./src/*.tsx",
+      "./src/*/index.ts",
+      ",./src/*/index.tsx"
+    ]
+  },
+  "scripts": {
+    "lint": "biome lint",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.1.4",
+    "@example/tsconfig": "workspace:*",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "typescript": "~5.8.3"
+  }
+}

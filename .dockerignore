@@ -1,0 +1,6 @@
+**/.DS_Store
+**/.env
+**/.git
+**/.gitignore
+**/.turbo/
+**/node_modules/

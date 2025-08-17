@@ -1,0 +1,9 @@
+{
+  "extends": "@example/tsconfig/react.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "typeRoots": ["node_modules/@types", "src/lib/types"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
